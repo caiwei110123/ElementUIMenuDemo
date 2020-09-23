@@ -1,6 +1,3 @@
-/**
- * Created by yqr on 2018/4/13.
- */
 import Env from './env';
 import axios from 'axios'
 import {road} from '../road.js'

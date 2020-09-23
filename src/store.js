@@ -1,13 +1,10 @@
-/**
- * Created by yqr on 2018/3/26.
- */
 import Vue from 'vue'
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
 /*测试数据*/
-const date = 'Mon Mar 24 2018 00:00:00 GMT+0800 (中国标准时间)'
+const date = new Date();
 const data = [
   {
     id: '1111',

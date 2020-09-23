@@ -1,6 +1,3 @@
-/**
- * Created by yqr on 2018/4/13.
- */
 import * as API from './'
 
 export default {

@@ -1,6 +1,3 @@
-/**
- * Created by yqr on 2018/3/26.
- */
 import Vue from 'vue'
 import Router from 'vue-router'
 import TopNav from '@/components/nav/topNav.vue'
@@ -44,7 +41,19 @@ let router = new Router({
       children: [
         {
           path: '/dashboard',
-          name: '首页',
+          name: '学校画像',
+          components: {
+            default: Dashboard,
+            top: TopNav,
+            aside: LeftNav
+          },
+          leaf: true, // 只有一个节点
+          iconCls: 'iconfont icon-home', // 图标样式class
+          menuShow: true
+        },
+        {
+          path: '/dashboard1',
+          name: '教师画像',
           components: {
             default: Dashboard,
             top: TopNav,
@@ -61,13 +70,13 @@ let router = new Router({
             top: TopNav,
             aside: LeftNav
           },
-          name: '我的设置',
+          name: '我的收藏',
           iconCls: 'el-icon-menu',
           menuShow: true,
           children: [
-            { path: '/mySet/plan', component: Plan, name: '行程计划', menuShow: true },
-            { path: '/mySet/mission', component: Mission, name: '我的任务', menuShow: true },
-            { path: '/mySet/maillist', component: Maillist, name: '通讯录', menuShow: true }
+            { path: '/mySet/plan', component: Plan, name: '我的任务', menuShow: true },
+            { path: '/mySet/mission', component: Mission, name: '我的消息', menuShow: true },
+            { path: '/mySet/maillist', component: Maillist, name: '我的代办', menuShow: true }
           ]
         }
       ]
@@ -82,7 +91,7 @@ let router = new Router({
       children: [
         {
           path: '/enterprise/list',
-          name: '企业信息1',
+          name: '年度重点工作',
           components: {
             default: EnterpriseList,
             top: TopNav,
@@ -94,7 +103,7 @@ let router = new Router({
         },
         {
           path: '/enterprise/detail',
-          name: '企业详情',
+          name: '机构设置',
           components: {
             default: EnterpriseDetail,
             top: TopNav,
@@ -106,7 +115,7 @@ let router = new Router({
         },
         {
           path: '/enterprise/add',
-          name: '添加企业',
+          name: '我的文件',
           components: {
             default: EnterpriseAdd,
             top: TopNav,
@@ -118,7 +127,7 @@ let router = new Router({
         },
         {
           path: '/enterprise/validate',
-          name: '企业认证',
+          name: '全部文件',
           components: {
             default: EnterpriseValidate,
             top: TopNav,
