@@ -148,11 +148,11 @@
     border: 1px solid #eaeaea;
     box-shadow: 0 0 25px #cac6c6;
 
-    background: -ms-linear-gradient(top, #ace, #00C1DE); /* IE 10 */
-    background: -moz-linear-gradient(top, #ace, #00C1DE); /*火狐*/
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ace), to(#00C1DE)); /*谷歌*/
-    background: -webkit-linear-gradient(top, #ace, #00C1DE); /*Safari5.1 Chrome 10+*/
-    background: -o-linear-gradient(top,#ace, #00C1DE); /*Opera 11.10+*/
+    background: -ms-linear-gradient(top, #ace, #); /* IE 10 */
+    background: -moz-linear-gradient(top, #ace, #20A2ED); /*火狐*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ace), to(#20A2ED)); /*谷歌*/
+    background: -webkit-linear-gradient(top, #ace, #20A2ED); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top,#ace, #20A2ED); /*Opera 11.10+*/
 
   }
   .login-container .title {
